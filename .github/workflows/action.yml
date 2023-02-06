@@ -7,7 +7,7 @@ jobs:
     name: First build container
     steps:
       - name: Setup
-        run: docker build -t oma .
+        run: docker build -t oma ${GITHUB_WORKSPACE}
   test:
     runs-on: ubuntu-latest
     container:
